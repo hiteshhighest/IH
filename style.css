@@ -1,0 +1,129 @@
+.LightMode {
+    --BaseBackgroundColor: rgba(255, 255, 255, 0.2);
+    --BackgroundColor: #fff;
+    --TextColor: #000;
+    --TextHover: rgba(0,0,0,0.1);
+}
+
+.DarkMode {
+    --BaseBackgroundColor: rgba(0, 0, 0, 0.2);
+    --BackgroundColor: rgba(0,0,0,0.8);
+    --TextColor: #fff;
+    --TextHover: rgba(255,255,255,0.1);
+}
+
+* {
+    font-family: "Modern Antiqua", serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: var(--BaseBackgroundColor);
+    box-shadow: 0px 10px 19px #000;
+    padding: 60px 40px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    font-size: 70px;
+    margin-bottom: 70px;
+    color: var(--TextColor);
+}
+
+button {
+    font-family: 'Roboto', serif;
+    height: 70px;
+    aspect-ratio: 2.5/1;
+    border-radius: 35px;
+    border: none;
+    font-size: x-large;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid #000;
+    background-color: var(--BackgroundColor);
+    color: var(--TextColor);
+}
+
+button:hover {
+    background-color: var(--TextHover);
+}
+
+button:active {
+    background-color: #0095F6;
+    color: #fff;
+}
+
+.View {
+    margin-left: 70px;
+}
+
+@media (max-width: 1010px) {
+    .View {
+        margin-left: 0px;
+        margin-top: 20px;
+    } 
+}
+
+@media (max-width: 500px) {
+    .container h1 {
+        font-size: 50px;
+    }
+    .View {
+        margin-left: 0px;
+        margin-top: 20px;
+    }    
+}
+
+@media (max-width: 360px) {
+    .container h1 {
+        font-size: 40px;
+    }
+    .View {
+        margin-left: 0px;
+        margin-top: 20px;
+    }    
+}
+
+.Theme {
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+    height: max-content;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.Theme:hover {
+    opacity: 0.7;
+}
+
+.Theme img {
+    width: 40px;
+}

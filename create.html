@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Information Hub - Create</title>
+
+    <link rel="stylesheet" href="create.css">
+    <link rel="icon" type="image/x-icon" href="Images/Logo.gif">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body class="LightMode">
+    <video autoplay muted loop>
+        <source src="Videos/Background.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="container">
+        <form action="https://formsubmit.co/hiteshhighest122@gmail.com" method="post">
+            <table>
+                <tr>
+                    <td><label>Name</label></td>
+                    <td><input type="text" name="name" placeholder="Name" class="name" required></td>
+                </tr>
+                <tr>
+                    <td><label>Topic</label></td>
+                    <td><input type="text" name="topic" placeholder="Topic" class="topic" required></td>
+                </tr>
+                <tr>
+                    <td><label>Information</label></td>
+                    <td><textarea name="info" placeholder="Your information" class="information" required></textarea></td>
+                </tr>
+            </table>
+            <div class="buttons">
+                <input type="submit" value="Submit" onclick="GetValue()">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+
+    <button class="Theme" onclick="Theme()">
+        <img src="Images/LightMode.png">
+    </button>
+
+    <script src="script.js"></script>
+    <script src="data.js"></script>
+</body>
+</html>
